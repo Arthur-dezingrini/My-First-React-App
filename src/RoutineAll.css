@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #fafafa;
+    background-color: rgb(255, 32, 69, 0.5);
+    display: flex;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin-top: 70px;
+}
+
+form {
+    margin-bottom: 50px;
+}
+
+.inputAll {
+    display:flex;
+}
+
+.input {
+    background-color: rgb(255, 90, 117);
+    border: none;
+    color: #fafafa;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    width: 400px;
+    padding: 15px 10px;
+}
+
+*:focus {
+    outline: 0;
+}
+
+::placeholder {
+    color: #fafafa;
+}
+
+.btn {
+    background-color: rgb(211, 52, 163);
+    color: white;
+    font-weight: bold;
+    padding: 15px 20px;
+    border-top-right-radius: 8px ;
+    border-bottom-right-radius: 8px ;
+    transition: 0.4s;
+    border: none;
+    cursor: pointer;
+}
+ 
+.btn:hover {
+    background-color: rgb(255, 66, 186);
+}
+
+.tasks {
+    margin: 0 auto;
+}
+
+.task-item {
+    border: 2px solid rgb(255, 21, 169, 0.5);
+    background-color: rgb(255, 32, 69);
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.none {
+    display: none;
+}
+
+.task-item:hover {
+    background-color: rgb(255, 32, 100);
+}
+
+.task-item span {
+    text-align: start;
+    width: 100%;
+    margin-right: 10px;
+    padding: 10px 15px;
+}
+
+.task-item.completo {
+    background-color: rgb(255, 32, 69, 0.3);
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.task-item.completo span {
+    width: 100%;
+    color: rgb(255, 32, 69);
+    margin-right: 10px;
+    padding: 10px 15px;
+    text-decoration: line-through;
+}
+
+.btn-remove {
+    background: none;
+    color: #fafafa;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+}
+.btn-remove:hover {
+    background: #ff004c;
+    color: #fafafa;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.delete-all {
+   width: 100%;
+   color: #ff004c;
+   padding: 15px;
+   background: none;
+   border: 1px solid #ff004c;
+   font-weight: bold;
+   border-radius: 8px;
+   transition: 0.4s;
+}
+
+.delete-all:hover {
+    color: white;
+    background-color: #ff004c;
+    cursor: pointer;
+}
